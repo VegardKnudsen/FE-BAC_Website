@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+    <title>Horten Motorbåtforening</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <h3><strong><a class="navbar-brand" href="#">Horten Motorbåtforening</a></strong></h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Hovedside</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Nyheter</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="meldeminfo.html">Meldemsinformasjon</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="kontakt.html">Kontakt<span class="sr-only">(current)</span></a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+
+    <h2 class="contact_title"><strong>Kontakt</strong></h2>
+
+    <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="messages"></div>
+        
+            <div class="controls">
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Fornavn *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Vær vennlig å skriv fornavn" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Etternavn *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Vær vennlig å skriv etternavn" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">E-post *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Vær vennlig å skriv e-post" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_need">Vennligst spesifiser ditt behov *</label>
+                            <select id="form_need" name="need" class="form-control" required="required" data-error="Vær vennlig å spesifiser ditt behov.">
+                                <option value=""></option>
+                                <option value="Request quotation">Behov 1</option>
+                                <option value="Request order status">Behov 2</option>
+                                <option value="Request copy of an invoice">Behov 3</option>
+                                <option value="Other">Annet</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Melding *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Melding" rows="4" required="required" data-error="Skriv en melding"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary btn-send" value="Send melding">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                            <strong>*</strong> Disse feltene er påkrevd
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        </form>
+
+        <footer class="page-footer font-small white">
+            <div class="footer-copyright text-center py-3">© 2019 Copyright: FE-BAC
+            </div>
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.articles {
+    padding-top: 100px;
+    max-width: 100%;
+}
+/*
+.article-text-width {
+    max-width: 400px;
+    text-align: center;
+}
+*/
+
+.text_breaker {
+    padding-top: 110px;
+    text-align: center;
+}
+
+.articles p {
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.page-footer{
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+
+#contact-form {
+    padding-top: 100px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.member_info_class{
+    padding-top: 110px;
+    margin: auto;
+    max-width: 80%;
+}
+
+.member_info_title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.info_pic {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.contact_title{
+    padding-top: 110px;
+    text-align: center;
+}
